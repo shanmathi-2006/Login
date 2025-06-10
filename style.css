@@ -1,0 +1,122 @@
+/* public/css/style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5; /* Light grey background */
+    color: #333;
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    overflow: hidden; /* Prevent scrollbars if content is slightly larger */
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 380px; /* Max width for the login form */
+    text-align: center;
+}
+
+h1 {
+    color: #1877f2; /* Facebook blue like color */
+    margin-bottom: 25px;
+    font-size: 2.2em;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    text-align: left; /* Align labels to the left */
+}
+
+label {
+    display: block; /* Each label on its own line */
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #1877f2;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+button[type="submit"] {
+    background-color: #1877f2;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #166fe5;
+}
+
+p.signup-link {
+    margin-top: 25px;
+    font-size: 0.95em;
+    color: #666;
+}
+
+p.signup-link a {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for general container for success/failure messages (optional) */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.container h1 {
+    color: #333;
+    font-size: 2em;
+}
+.container p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+.container a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.container a:hover {
+    background-color: #0056b3;
+}
